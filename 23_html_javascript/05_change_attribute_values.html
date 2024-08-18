@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h1>Javascript Attributes</h1>
+
+        <script>
+            function light(sw) {
+                var pic;
+                if (sw == 0) {
+                    pic = "pic_1.gif"
+                } else {
+                    pic = "pic_2.gif"
+                }
+                document.getElementById('myImage').src=pic;
+            }
+        </script>
+
+        <img id="myImage" src="pic_1.gif" height="180" width="100">
+
+        <p>
+            <button type="button" onclick="light(1)">light off</button>
+            <button type="button" onclick="light(0)">light on</button>
+        </p>
+    </body>
+</html>
